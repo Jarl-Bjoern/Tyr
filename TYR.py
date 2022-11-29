@@ -3,7 +3,7 @@
 # Rainer Christian Bjoern Herold
 
 # Libraries
-from Resource.VF import *
+from Resources.VF import *
 
 # Main
 if __name__ == '__main__':
