@@ -5,5 +5,8 @@
       <img title="Follower" src="https://img.shields.io/github/followers/Jarl-Bjoern.svg?style=social&label=Follow&maxAge=2592000"><a href="https://github.com/Jarl-Bjoern?tab=followers"></a>
 
 # General Description
+With this program you can check URL's, which you have determined for example by means of fuzzing, again in relatively fast form.
 
-This tool is intended to simplify the setup of various tools and configuration of a Kali machine after a fresh installation and save unnecessary time, so that a predefined list can be used in advance or you can also create your own.<br />
+It is best suited if you unite your browser with the BURP proxy, so you can track the called pages directly.<br />
+
+# 
