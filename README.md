@@ -9,4 +9,16 @@ With this program you can check URL's, which you have determined for example by 
 
 It is best suited if you unite your browser with the BURP proxy, so you can track the called pages directly.<br />
 
-# 
+# Table of Contents
+- [How to download and install the tool](#download_install)
+  - [Download and start the tool](#start_install)
+  - [Using the help section to see which parameters do we have](#help_install)
+      
+<a name="download_install"></a>
+# How to download and install the tool
+<a name="start_install"></a>
+## Download and start the tool
+```bash
+sudo git clone https://github.com/Jarl-Bjoern/Tyr/
+cd Tyr
+sudo python3 TYR.py
