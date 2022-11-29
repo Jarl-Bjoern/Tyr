@@ -35,7 +35,7 @@ def Initialien():
 """
     Stdout_Output(Header)
 
-def Search(MAX_COUNT, SLEEP_SECONDS, Counter = 0):
+def Open_URL(MAX_COUNT, SLEEP_SECONDS, Counter = 0):
     with open(argv[1], 'r') as f:
         for URL in f.read().splitlines():
         		if ('http' not in URL): webbrowser.open(f'http://{URL}')
