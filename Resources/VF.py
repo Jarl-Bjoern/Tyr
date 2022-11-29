@@ -5,6 +5,14 @@
 # Libraries
 from Resources.HF import *
 
+# Classes
+class Colors:
+    GREEN = '\033[32m'
+    ORANGE = '\033[33m'
+    BLUE = '\033[34m'
+    UNDERLINE = '\033[4m'
+    RESET = '\033[0m'
+
 # Functions
 def Stdout_Output(Text_Array):
     for char in Text_Array:
@@ -13,13 +21,6 @@ def Stdout_Output(Text_Array):
         sleep(0.01)
 
 def Initialien():
-    class Colors:
-        GREEN = '\033[32m'
-        ORANGE = '\033[33m'
-        BLUE = '\033[34m'
-        UNDERLINE = '\033[4m'
-        RESET = '\033[0m'
-
     if (osname == 'nt'): system('cls')
     else: system('clear')
     Header = """
@@ -42,4 +43,4 @@ def Open_URL(TEXT_FILE, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
             if (Counter == MAX_COUNT):
                 input(f'\nThe maximum number {MAX_COUNT} of open tabs has been reached\n\nYou can continue with the "Enter" key\n\nWith the key combination "CTRL" + "F4" you can close open tabs faster')
                 Counter = 0
-        print("All available URLs were opened")
+        print(Colors.ORANGE+"All available URLs were opened! :)"+Colors.RESET)
