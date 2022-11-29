@@ -38,8 +38,8 @@ def Initialien():
 def Open_URL(MAX_COUNT, SLEEP_SECONDS, Counter = 0):
     with open(argv[1], 'r') as f:
         for URL in f.read().splitlines():
-        		if ('http' not in URL): webbrowser.open(f'http://{URL}')
-        		else: webbrowser.open(URL)
+        		if ('http' not in URL): browser_open(f'http://{URL}')
+        		else: browser_open(URL)
         	Counter += 1
         	sleep(SLEEP_SECONDS)
         	if (Counter == MAX_COUNT):
