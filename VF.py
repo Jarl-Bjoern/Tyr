@@ -35,10 +35,10 @@ def Initialien():
 def Open_URL(MAX_COUNT, SLEEP_SECONDS, Counter = 0):
     with open(argv[1], 'r') as f:
         for URL in f.read().splitlines():
-        		if ('http' not in URL): browser_open(f'http://{URL}')
-        		else: browser_open(URL)
-        	Counter += 1
-        	sleep(SLEEP_SECONDS)
-        	if (Counter == MAX_COUNT):
-        		input(f'\nThere are {100} tabs opened, please close all and confirm with Return to continue')
-        		Counter = 0
+            if ('http' not in URL): browser_open(f'http://{URL}')
+            else: browser_open(URL)
+            Counter += 1
+            sleep(SLEEP_SECONDS)
+            if (Counter == MAX_COUNT):
+                input(f'\nThere are {100} tabs opened, please close all and confirm with Return to continue')
+                Counter = 0
