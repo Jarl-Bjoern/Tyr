@@ -13,6 +13,7 @@ __status__ = "Production"
 
 # Libraries
 try:
+    from argparse import ArgumentParser, FileType, RawTextHelpFormatter, SUPPRESS
     from os import name as osname
     from numpy import array
     from sys import argv
