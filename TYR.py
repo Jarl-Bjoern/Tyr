@@ -56,8 +56,7 @@ if __name__ == '__main__':
     optional.add_argument('-h','--help', action='help', default=SUPPRESS, help='Show this help message and exit.\n\n-------------------------------------------------------------------------------------')
     args = parser.parse_args()
 
-    
+    Open_URL(args.max_tabs, args.time)
 #    Parameters = ""
 #    for Arg_Name, Arg_Value in vars(args).items():
 #        elif ((Arg_Name == "path" and Arg_Value != None) or (Arg_Name == "host_name" and Arg_Value != None)): Parameters += f"{Arg_Value} "
-    system(f'sudo bash {Start_Script} {Parameters}')
