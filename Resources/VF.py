@@ -25,7 +25,7 @@ def Initialien():
     Header = """
 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 💀\t\t\t\t\t\t\t\t💀
-💀\t\t      """+Colors.UNDERLINE+"Tyr"+Colors.RESET+ """\t\t\t💀
+💀\t\t\t      """+Colors.UNDERLINE+"Tyr"+Colors.RESET+ """\t\t\t\t💀
 💀\t\t\t  """+Colors.ORANGE+"Version "+Colors.BLUE+"0.1"+Colors.RESET+"""\t\t\t\t💀
 💀\t\t\t\t\t\t\t\t💀
 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀\n\n
