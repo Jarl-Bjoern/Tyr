@@ -5,9 +5,6 @@
 # Libraries
 from HF import *
 
-# Variables
-MAX_COUNT, SLEEP_SECONDS = 100, 0.65
-
 # Functions
 def Stdout_Output(Text_Array):
     for char in Text_Array:
