@@ -13,6 +13,7 @@ __status__ = "Production"
 
 # Libraries
 try:
+    from os import name as osname
     from numpy import array
     from sys import argv
     from time import sleep
