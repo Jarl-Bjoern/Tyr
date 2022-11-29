@@ -46,17 +46,5 @@ def Initialien():
 """
     Stdout_Output(Header)
 
-
-
 # Main
 if __name__ == '__main__':
-    Counter = 0
-    with open(argv[1], 'r') as f:
-        for i in f.read().splitlines():
-        		if ('http' not in Text[i]): webbrowser.open(f'http://{Text[i]}')
-        		else: webbrowser.open(Text[i])
-        	Counter += 1
-        	sleep(0.65)
-        	if (Counter == 100):
-        		input('There are 100 tabs opened, please close all and confirm with Return to continue')
-        		Counter = 0
