@@ -16,4 +16,5 @@ if __name__ == '__main__':
     optional.add_argument('-h','--help', action='help', default=SUPPRESS, help='Show this help message and exit.\n\n-------------------------------------------------------------------------------------')
     args = parser.parse_args()
 
-    Open_URL(args.import_list ,args.max_tabs, args.time)
+    
+    Initialien(), Open_URL(args.import_list ,args.max_tabs, args.time)
