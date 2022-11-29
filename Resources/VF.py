@@ -3,7 +3,7 @@
 # Rainer Christian Bjoern Herold
 
 # Libraries
-from HF import *
+from Resources.HF import *
 
 # Functions
 def Stdout_Output(Text_Array):
