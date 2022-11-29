@@ -15,8 +15,6 @@ __status__ = "Production"
 try:
     from argparse import ArgumentParser, FileType, RawTextHelpFormatter, SUPPRESS
     from os import name as osname
-    from numpy import array
-    from sys import argv
     from time import sleep
     from webbrowser import open as browser_open
 except ModuleNotFoundError as e: input(f"The module was not found\n\n{e}\n\nPlease confirm with the button 'Return'"), exit()
