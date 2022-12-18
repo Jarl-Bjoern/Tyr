@@ -26,7 +26,7 @@ sudo python3 TYR.py
 
 <a name="help_install"></a>
 ## Using the help section to see which parameter do we have
-```bash
+```python
 usage: TYR.py -iL IMPORT_LIST [-t TIME] [-mt MAX_TABS] [-h]
 
 required arguments:
