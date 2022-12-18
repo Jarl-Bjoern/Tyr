@@ -7,7 +7,7 @@ from Resources.VF import *
 
 # Main
 if __name__ == '__main__':
-    parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter)
+    parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter, description=Colors.ORANGE+Program_Description+Colors.RESET)
     required = parser.add_argument_group(Colors.ORANGE+'required arguments'+Colors.RESET)
     optional = parser.add_argument_group(Colors.ORANGE+'optional arguments'+Colors.RESET)
     
