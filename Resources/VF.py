@@ -7,11 +7,24 @@ from Resources.HF import *
 
 # Classes
 class Colors:
+    CYAN = '\033[36m'
     GREEN = '\033[32m'
     ORANGE = '\033[33m'
     BLUE = '\033[34m'
+    RED = '\033[31m'
     UNDERLINE = '\033[4m'
     RESET = '\033[0m'
+
+# Variables
+Program_Description = """-------------------------------------------------------------------------------------
+|  Created by Rainer Christian Bjoern Herold                                        |
+|  Copyright 2022. All rights reserved.                                             |
+|                                                                                   |
+|  Please do not use the program for illegal activities.                            |
+|                                                                                   |
+|  If you got any problems don't hesitate to contact me so I can try to fix them.   |
+-------------------------------------------------------------------------------------
+"""
 
 # Functions
 def Stdout_Output(Text_Array):
