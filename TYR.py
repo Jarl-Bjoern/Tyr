@@ -17,4 +17,7 @@ if __name__ == '__main__':
     optional.add_argument('-h','--help', action='help', default=SUPPRESS, help=Colors.GREEN+'Show this help message and exit.'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)
 
     args = parser.parse_args()
-    Initialien(), Open_URL(args.import_list ,args.max_tabs, args.time)
+    Initialien()
+    
+    try: Open_URL(args.import_list ,args.max_tabs, args.time)
+    except KeyboardInterrupt: exit()
