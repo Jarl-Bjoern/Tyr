@@ -5,7 +5,7 @@
 # Libraries
 from Resources.Standard_Operations.Libraries import *
 from Resources.Standard_Operations.Colors import Colors
-from Resources.Stanrard_Operations.Standard import Standard
+from Resources.Standard_Operations.Standard import Standard
 
 # Variables
 Program_Description = """-------------------------------------------------------------------------------------
