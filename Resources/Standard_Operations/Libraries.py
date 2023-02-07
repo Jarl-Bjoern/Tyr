@@ -7,7 +7,7 @@ __author__ = "Rainer C. B. Herold"
 __copyright__ = "Copyright 2022, Rainer C. B. Herold"
 __credits__ = "Rainer C. B. Herold"
 __license__ = "MIT license"
-__version__ = "0.1"
+__version__ = "0.2"
 __maintainer__ = "Rainer C. B. Herold"
 __status__ = "Production"
 
@@ -17,6 +17,7 @@ try:
     from os import kill, name as osname, system
     from os.path import dirname, join, realpath
     from psutil import process_iter
+    from signal import SIGKILL
     from sys import stdout
     from time import sleep
     from webbrowser import open as browser_open
