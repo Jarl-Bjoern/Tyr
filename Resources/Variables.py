@@ -6,16 +6,6 @@
 from Resources.Standard_Operations.Libraries import *
 from Resources.Standard_Operations.Colors import Colors
 
-# Classes
-class Colors:
-    CYAN = '\033[36m'
-    GREEN = '\033[32m'
-    ORANGE = '\033[33m'
-    BLUE = '\033[34m'
-    RED = '\033[31m'
-    UNDERLINE = '\033[4m'
-    RESET = '\033[0m'
-
 # Variables
 Program_Description = """-------------------------------------------------------------------------------------
 |  Created by Rainer Christian Bjoern Herold                                        |
@@ -28,6 +18,11 @@ Program_Description = """-------------------------------------------------------
 """
 
 # Functions
+def Process_ID(Process_Name):
+    for P in process_iter():
+        if (Process_Name in P.name()):
+            return P.pid
+
 def Stdout_Output(Text_Array):
     for char in Text_Array:
         stdout.write(char)
