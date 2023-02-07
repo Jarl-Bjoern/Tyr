@@ -5,6 +5,7 @@
 # Libraries
 from Resources.Standard_Operations.Libraries import *
 from Resources.Standard_Operations.Colors import Colors
+from Resources.Stanrard_Operations.Standard import Standard
 
 # Variables
 Program_Description = """-------------------------------------------------------------------------------------
@@ -22,25 +23,6 @@ def Process_ID(Process_Name):
     for P in process_iter():
         if (Process_Name in P.name()):
             return P.pid
-
-def Stdout_Output(Text_Array):
-    for char in Text_Array:
-        stdout.write(char)
-        stdout.flush()
-        sleep(0.01)
-
-def Initialien():
-    if (osname == 'nt'): system('cls')
-    else: system('clear')
-    Header = """💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
-💀\t\t\t\t\t\t\t\t💀
-💀\t\t              """+Colors.UNDERLINE+"TYR"+Colors.RESET+"""\t\t\t\t💀
-💀\t\t\t  """+Colors.ORANGE+"Version "+Colors.CYAN+"0.1"+Colors.RESET+"""\t\t\t\t💀
-💀\t\tRainer Christian Bjoern Herold\t\t\t💀
-💀\t\t\t\t\t\t\t\t💀
-💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀\n\n
-"""
-    Stdout_Output(Header)
 
 def Open_URL(TEXT_FILE, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
     with open(TEXT_FILE, 'r') as f:
