@@ -17,7 +17,7 @@ def main():
     optional.add_argument('-h','--help', action='help', default=SUPPRESS, help=Colors.GREEN+'Show this help message and exit.'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)
 
     args = parser.parse_args()
-    Initialien()
+    Standard.Initialien()
 
     Open_URL(args.import_list ,args.max_tabs, args.time)
 
