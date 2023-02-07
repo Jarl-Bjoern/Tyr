@@ -22,7 +22,7 @@
   </a>
 </div><br/>
 
-TYR offers the possibility to load URLs into your standard browser in a relatively fast way, so that you can check them again manually. This is very suitable for example if you get 1000 endpoints by fuzzing and cannot copy them manually due to lack of time.
+TYR offers the possibility to load URLs into your standard browser in a relatively fast way, so that you can check them manually. This is very suitable for example if you get 1000 endpoints by fuzzing and cannot copy them manually due to lack of time.
 
 It is best suited if you unite your browser with the BURP proxy, so you can track the called pages directly.<br />
 
