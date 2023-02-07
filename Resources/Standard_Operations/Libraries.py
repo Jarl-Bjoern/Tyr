@@ -13,7 +13,6 @@ __status__ = "Production"
 
 # Libraries
 try:
-    from argparse import ArgumentParser, FileType, RawTextHelpFormatter, SUPPRESS
     from os import kill, name as osname, system
     from os.path import dirname, join, realpath
     from psutil import process_iter
@@ -26,3 +25,6 @@ except ModuleNotFoundError as e: input(f"The module was not found\n\n{e}\n\nPlea
 # Argument_Parser
 from Resources.Standard_Operations.ArgParser import Argument_Parser
 args = Argument_Parser()
+
+# Delete_Unused_Functions
+del Argument_Parser
