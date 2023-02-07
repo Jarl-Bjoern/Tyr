@@ -3,7 +3,8 @@
 # Rainer Christian Bjoern Herold
 
 # Libraries
-from Resources.HF import *
+from Resources.Standard_Operations.Libraries import *
+from Resources.Standard_Operations.Colors import Colors
 
 # Classes
 class Colors:
