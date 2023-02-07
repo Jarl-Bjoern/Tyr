@@ -26,15 +26,15 @@ TYR offers the possibility to load URLs into your standard browser in a relative
 
 It is best suited if you unite your browser with the BURP proxy, so you can track the called pages directly.<br />
 
-# Table of Contents
+# 📖 Table of Contents
 - [How to download and install the tool](#download_install)
   - [Download and start the tool](#start_install)
   - [Using the help section to see which parameters do we have](#help_install)
       
 <a name="download_install"></a>
-# How to download and install the tool
+# ⚔ How to download and install the tool
 <a name="start_install"></a>
-## Download and start the tool
+## ⚔ Download and start the tool
 ```bash
 sudo git clone https://github.com/Jarl-Bjoern/Tyr/
 cd Tyr
@@ -42,7 +42,7 @@ sudo python3 TYR.py
 ```
 
 <a name="help_install"></a>
-## Using the help section to see which parameter do we have
+## ⚔ Using the help section to see which parameter do we have
 ```python
 usage: TYR.py -iL IMPORT_LIST [-t TIME] [-mt MAX_TABS] [-h]
 
