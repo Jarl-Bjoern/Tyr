@@ -18,7 +18,7 @@ class Colors:
 # Variables
 Program_Description = """-------------------------------------------------------------------------------------
 |  Created by Rainer Christian Bjoern Herold                                        |
-|  Copyright 2022. All rights reserved.                                             |
+|  Copyright 2022-2023. All rights reserved.                                        |
 |                                                                                   |
 |  Please do not use the program for illegal activities.                            |
 |                                                                                   |
