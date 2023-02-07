@@ -20,6 +20,7 @@ def main():
     Standard.Initialien()
 
     PID = Process_ID("firefox")
+    print (PID)
     if (PID != None):
         input("An already open Firefox instance has been located, it is advised to close it to avoid errors.\n\nThe instance is closed with the 'Return' button.\n\n")
         kill(PID, SIGKILL)
