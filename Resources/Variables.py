@@ -7,17 +7,6 @@ from Resources.Standard_Operations.Libraries import *
 from Resources.Standard_Operations.Colors import Colors
 from Resources.Standard_Operations.Standard import Standard
 
-# Variables
-Program_Description = """-------------------------------------------------------------------------------------
-|  Created by Rainer Christian Bjoern Herold                                        |
-|  Copyright 2022-2023. All rights reserved.                                        |
-|                                                                                   |
-|  Please do not use the program for illegal activities.                            |
-|                                                                                   |
-|  If you got any problems don't hesitate to contact me so I can try to fix them.   |
--------------------------------------------------------------------------------------
-"""
-
 # Functions
 def Process_ID(Process_Name):
     for P in process_iter():
