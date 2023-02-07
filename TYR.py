@@ -3,10 +3,10 @@
 # Rainer Christian Bjoern Herold
 
 # Libraries
-from Resources.VF import *
+from Resources.Variables import *
 
-# Main
-if __name__ == '__main__':
+# Functions
+def main():
     parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter, description=Colors.ORANGE+Program_Description+Colors.RESET)
     required = parser.add_argument_group(Colors.ORANGE+'required arguments'+Colors.RESET)
     optional = parser.add_argument_group(Colors.ORANGE+'optional arguments'+Colors.RESET)
@@ -18,6 +18,10 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     Initialien()
-    
-    try: Open_URL(args.import_list ,args.max_tabs, args.time)
+
+    Open_URL(args.import_list ,args.max_tabs, args.time)
+
+# Main
+if __name__ == '__main__':    
+    try: main()
     except KeyboardInterrupt: exit()
