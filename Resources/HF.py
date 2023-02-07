@@ -14,7 +14,9 @@ __status__ = "Production"
 # Libraries
 try:
     from argparse import ArgumentParser, FileType, RawTextHelpFormatter, SUPPRESS
-    from os import name as osname, system
+    from os import kill, name as osname, system
+    from os.path import dirname, join, realpath
+    from psutil import process_iter
     from sys import stdout
     from time import sleep
     from webbrowser import open as browser_open
