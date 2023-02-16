@@ -54,28 +54,29 @@ usage: TYR.py -iL IMPORT_LIST [-t TIME] [-mt MAX_TABS] [-h]
 required arguments:
   -iL IMPORT_LIST, --import-list IMPORT_LIST
                         This parameter specify your targetlist
-                        
+ 
                         Your list must look like in this example:
                           - http://192.168.2.1
                           - https://192.168.2.2:8443
                           - http://tomcat-test:8080
-                        
+                          - http://tomcat-test:8080/manager
+
                         -----------------------------------------------------------
 
 optional arguments:
   -t TIME, --time TIME  This parameter specify the seconds between the next tab
-                        
+ 
                         Default: 0.65 Seconds
-                        
+ 
                         -----------------------------------------------------------
   -mt MAX_TABS, --max-tabs MAX_TABS
                         This parameter specify the max open tabs
-                        
+ 
                         Default: 100
-                        
+ 
                         -----------------------------------------------------------
   -h, --help            Show this help message and exit.
-                        
+ 
                         -----------------------------------------------------------
 ```
 
