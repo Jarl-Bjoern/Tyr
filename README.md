@@ -2,24 +2,28 @@
 <p align="center"></p>
 <div align="center">
   <a href="https://www.kali.org/">
-    <img alt="linux" src="https://img.shields.io/badge/os%20-Linux-1f425f.svg" />
+    <img alt="linux" src="https://img.shields.io/badge/%20-Linux-1f425f.svg?logo=linux&logoColor=cyan" />
   </a>
-  <a href="https://www.kali.org/">
-    <img alt="windows" src="https://img.shields.io/badge/os%20-Windows-1f425f.svg" />
+  <a href="https://www.microsoft.com/">
+    <img alt="windows" src="https://img.shields.io/badge/%20-Windows-1f425f.svg?logo=windows&logoColor=cyan" />
   </a>
   <a href="https://www.python.org/downloads/release/python-3100/">
-    <img alt="python" src="https://img.shields.io/badge/python-3.10-blue.svg" />
+    <img alt="python" src="https://img.shields.io/badge/python-3.10-blue.svg?logo=python&logoColor=cyan" />
   </a>
   <a href="https://visitor-badge.glitch.me/badge?page_id=jarl-bjoern/tyr&left_color=grey&right_color=blue">
     <img alt="visitors" src="https://visitor-badge.glitch.me/badge?page_id=jarl-bjoern/tyr&left_color=grey&right_color=blue" />
   </a>
 </div>
 <div align="center">
-  <a href="https://GitHub.com/jarl-bjoern/yggdrasil/tyr/">
-    <img alt="releases" src="https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg" />
+  <a href="https://GitHub.com/jarl-bjoern/tyr/releases/">
+    <img alt="repo size" src="https://img.shields.io/github/repo-size/jarl-bjoern/tyr?logo=github&logoColor=cyan" />
+  </a>
+  <a href="https://GitHub.com/jarl-bjoern/tyr/releases/">
+    <img alt="releases" src="https://img.shields.io/github/downloads/jarl-bjoern/tyr/total?color=blue&logo=github&logoColor=cyan" />
   </a>
   <a href="https://github.com/jarl-bjoern">
-      <img title="Follower" src="https://img.shields.io/github/followers/Jarl-Bjoern.svg?style=social&label=Follow&maxAge=2592000"><a href="https://github.com/Jarl-Bjoern?tab=followers"></a>
+      <img title="Follower" src="https://img.shields.io/github/followers/jarl-bjoern?color=blue&label=follow&logo=github&logoColor=cyan&style=flat-square">
+  </a>
 </div>
 <div align="center">
   <a href="https://www.python.org/">
