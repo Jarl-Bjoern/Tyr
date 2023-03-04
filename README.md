@@ -53,7 +53,14 @@ sudo python3 TYR.py
 <a name="help_install"></a>
 ## ⚔ Using the help section to see which parameter do we have
 ```python
-usage: TYR.py -iL IMPORT_LIST [-t TIME] [-mt MAX_TABS] [-h]
+-------------------------------------------------------------------------------------
+|  Created by Rainer Christian Bjoern Herold                                        |
+|  Copyright 2022-2023. All rights reserved.                                        |
+|                                                                                   |
+|  Please do not use the program for illegal activities.                            |
+|                                                                                   |
+|  If you got any problems don't hesitate to contact me so I can try to fix them.   |
+-------------------------------------------------------------------------------------
 
 required arguments:
   -iL IMPORT_LIST, --import-list IMPORT_LIST
