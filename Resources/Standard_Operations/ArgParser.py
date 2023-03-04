@@ -20,7 +20,7 @@ def Argument_Parser(Template_Location = dirname(realpath(__file__)).replace('Res
 -------------------------------------------------------------------------------------
 """
 
-    parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter, description=Colors.ORANGE+Program_Description+Colors.RESET)
+    parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter, description=Colors.ORANGE+Program_Description+Colors.RESET, usage=SUPPRESS)
     required = parser.add_argument_group(Colors.ORANGE+'required arguments'+Colors.RESET)
     optional = parser.add_argument_group(Colors.ORANGE+'optional arguments'+Colors.RESET)
     
