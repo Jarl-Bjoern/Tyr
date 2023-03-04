@@ -39,6 +39,7 @@ It is best suited if you unite your browser with the BURP proxy, so you can trac
 - [How to download and install the tool](#download_install)
   - [Download and start the tool](#start_install)
   - [Using the help section to see which parameters do we have](#help_install)
+  - [TYR](#live_demo)
       
 <a name="download_install"></a>
 # ⚔ How to download and install the tool
