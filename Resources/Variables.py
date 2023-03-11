@@ -26,4 +26,4 @@ def Open_URL(TEXT_FILE, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
                     Counter = 0
             print(Colors.ORANGE+"All available URLs were opened! :)"+Colors.RESET)
     except FileNotFoundError:
-        print(Colors.ORANGE+"The specified target file could not be found!"+Colors.RESET)
+        print(Colors.RED+"\tThe specified target file could not be found!"+Colors.RESET)
