@@ -21,6 +21,6 @@ def Open_URL(TEXT_FILE, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
             Counter += 1
             sleep(SLEEP_SECONDS)
             if (Counter == MAX_COUNT):
-                input(f'\nThe maximum number {MAX_COUNT} of open tabs has been reached\n\nYou can continue with the "Return" key\n\nWith the key combination "CTRL" + "F4" you can close open tabs faster')
+                input(Colors.ORANGE+f'\nThe maximum number '+Colors.RED+'{MAX_COUNT}'+Colors.ORANGE+' of open tabs has been reached\n\nYou can continue with the '+Colors.CYAN+'"Return"'+Colors.ORANGE+' key\n\nWith the key combination '+Colors.CYAN+'"CTRL" + "F4"'+Colors.ORANGE+' you can close open tabs faster'+Colors.RESET)
                 Counter = 0
         print(Colors.ORANGE+"All available URLs were opened! :)"+Colors.RESET)
