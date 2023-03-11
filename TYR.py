@@ -11,7 +11,7 @@ def main(args):
 
     PID = Process_ID("firefox")
     if (PID != None):
-        input(Colors.ORANGE+"An already open Firefox instance has been located, it is advised\n\tto close it to avoid errors.\n\nThe instance is closed with the "+Colors.CYAN+"'Return'"+Colors.ORANGE+" button.\n\n"+Colors.RESET)
+        input(Colors.ORANGE+"An already open Firefox instance has been located, it is advised\n\t\tto close it to avoid errors.\n\n\t\tThe instance is closed with the "+Colors.CYAN+"'Return'"+Colors.ORANGE+" button.\n\n"+Colors.RESET)
         kill(PID, SIGKILL), sleep(1.25)
     Open_URL(args.import_list, args.max_tabs, args.time)
 
