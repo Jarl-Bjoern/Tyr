@@ -26,7 +26,7 @@ class Standard:
   """
         Standard.Stdout_Output(Header)
 
-    def Read_Targets_XML(file_path, Array_Out = [], Array_SSL_Out = []):
+    def Read_Targets_XML(file_path, Array_Out = []):
         Protocol, Address, Port, Skip_Attributes = "","","",False
         for event, elem in ET.iterparse(file_path, events=("end",)):
             if (event == "end"):
@@ -46,16 +46,12 @@ class Standard:
                         Full_Target = f'{Protocol}://{Address}:{Port}'
                         Protocol, Address, Port = "","",""
 
-                        if ('ssl://' in Full_Target):
-                            if (Full_Target not in Array_SSL_Out):
-                                Array_SSL_Out.append(Full_Target)
-                        elif ('https://' in Full_Target):
-                            if (Full_Target not in Array_SSL_Out):
-                                Array_SSL_Out.append(Full_Target)
-                                Array_Out.append(Full_Target)
-                        else:
+                        if ('https://' in Full_Target or 'http://' in Full_Target):
                             if (Full_Target not in Array_Out):
                                 Array_Out.append(Full_Target)
+
                         Full_Target = ""
 
                     Skip_Attributes = False
+
+        return Array_Out
