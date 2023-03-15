@@ -4,7 +4,7 @@
 
 # Libraries
 from Resources.Standard_Operations.Colors import Colors
-from Resources.Standard_Operations.Libraries import osname, sleep, stdout, system
+from Resources.Standard_Operations.Libraries import ET, osname, sleep, stdout, system
 
 class Standard:
     def Stdout_Output(Text_Array):
