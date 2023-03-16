@@ -59,7 +59,10 @@ def main(args):
         kill(PID, SIGKILL), sleep(1.25)
 
     # Main_Process
-    Open_URL(Array_Targets, args.max_tabs, args.sleep)
+    if (len(Array_Targets) > 0):
+        Open_URL(Array_Targets, args.max_tabs, args.sleep)
+    else:
+        print(f"Your targetlist was empty!\n\n{Array_Targets}")
 
 # Main
 if __name__ == '__main__':    
