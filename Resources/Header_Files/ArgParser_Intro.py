@@ -4,7 +4,7 @@
 
 # Libraries
 from Resources.Standard_Operations.Colors import Colors
-from Resources.Standard_Operations.Libraries import dirname, join, realpath
+from .Libraries import dirname, join, realpath
 
 # Functions
 def Argument_Parser(Error_Text, Template_Location = dirname(realpath(__file__)).replace('Resources/Header_Files', 'Templates')):
