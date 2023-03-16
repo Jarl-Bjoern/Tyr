@@ -3,7 +3,7 @@
 # Rainer Christian Bjoern Herold
 
 # Libraries
-from Resources.Variables import *
+from Resources.Header_Files.Variables import *
 
 # Functions
 def main(args):
