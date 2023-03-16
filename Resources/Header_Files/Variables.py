@@ -14,7 +14,7 @@ def Process_ID(Process_Name):
             return P.pid
 
 def Open_URL(Input_File, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
-    for URL in Read_File(Input_File):
+    for URL in Standard.Read_File(Input_File):
         browser_open(URL, new=0)
         Counter += 1
         sleep(SLEEP_SECONDS)
