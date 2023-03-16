@@ -7,8 +7,6 @@ from Resources.Header_Files.Variables import *
 
 # Functions
 def main(args):
-    Standard.Initialien()
-
     # Target_Options
     if (args.target == None and args.import_list == None and args.add_nmap_xml_result == None):
         from Resources.Header_Files.ArgParser_Intro import Argument_Parser
@@ -51,6 +49,9 @@ def main(args):
         except ModuleNotFoundError as e: Module_Error(f"The module was not found\n\n{e}\n\nPlease confirm with the button 'Return'")
         shuffle(Array_Targets)
         del shuffle
+
+    # Program_Start
+    Standard.Initialien()
 
     # Process_Kill
     PID = Process_ID("firefox")
