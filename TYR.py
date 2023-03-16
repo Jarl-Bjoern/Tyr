@@ -46,7 +46,7 @@ def main(args):
             else: Array_Targets = [args.target[0]]
     if (args.random_order == True):
         try: from random import shuffle
-        except ModuleNotFoundError as e: Module_Error(f"The module was not found\n\n{e}\n\nPlease confirm with the button 'Return'")
+        except ModuleNotFoundError as e: input(f"The module was not found\n\n{e}\n\nPlease confirm with the button 'Return'"), exit()
         shuffle(Array_Targets)
         del shuffle
 
