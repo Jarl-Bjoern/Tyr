@@ -55,3 +55,10 @@ class Standard:
                     Skip_Attributes = False
 
         return Array_Out
+
+    def Read_File(Input_File):
+        try:
+            with open(Input_File, 'r') as f:
+                return f.read().splitlines()
+        except FileNotFoundError:
+            print(Colors.RED+"\tThe specified target file could not be found!"+Colors.RESET)
