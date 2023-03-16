@@ -24,7 +24,7 @@ def main(args):
             try:
                 Array_Temp_Zero = Standard.Read_Targets_XML(args.add_nmap_xml_result)
                 if (len(Array_Targets) > 0):
-                    for _ in array(Array_Temp_Zero):
+                    for _ in Array_Temp_Zero:
                         if (_ not in Array_Targets):
                             Array_Targets.append(_)
                 else:
