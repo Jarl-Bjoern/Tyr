@@ -63,33 +63,49 @@ sudo python3 TYR.py
 |  If you got any problems don't hesitate to contact me so I can try to fix them.   |
 -------------------------------------------------------------------------------------
 
-required arguments:
-  -iL IMPORT_LIST, --import-list IMPORT_LIST
-                        This parameter specify your targetlist
- 
-                        Your list must look like in this example:
-                          - http://192.168.2.1
-                          - https://192.168.2.2:8443
-                          - http://tomcat-test:8080
-                          - http://tomcat-test:8080/manager
-
-                        -----------------------------------------------------------
-
 optional arguments:
-  -t TIME, --time TIME  This parameter specify the seconds between the next tab
- 
+  -s SLEEP, --sleep SLEEP
+                        This parameter specify the seconds between the next tab
+
                         Default: 0.65 Seconds
- 
-                        -----------------------------------------------------------
+                        -------------------------------------------------------------
+
   -mt MAX_TABS, --max-tabs MAX_TABS
                         This parameter specify the max open tabs
- 
+
                         Default: 100
- 
-                        -----------------------------------------------------------
+                        -------------------------------------------------------------                                                                                                                              
   -h, --help            Show this help message and exit.
- 
-                        -----------------------------------------------------------
+
+                        -------------------------------------------------------------
+
+performance arguments:
+  -r [RANDOM_ORDER], --random-order [RANDOM_ORDER]
+                        This parameter randomize your targets.
+
+                        -------------------------------------------------------------
+
+target arguments:
+  -iL IMPORT_LIST, --import-list IMPORT_LIST
+                        Import your target list in the following example:
+                          - http://192.168.2.2
+                          - https://192.168.2.3
+                          - https://192.168.2.4:8443
+                          - ssh://192.168.2.5:22
+                          - ssl://192.168.2.5:3389
+
+                        -------------------------------------------------------------
+
+  -t [TARGET ...], --target [TARGET ...]
+                        Specify a single or multiple targets like in the following example:
+                           - 127.0.0.1, http://127.0.0.1, https://127.0.0.1
+
+                        -------------------------------------------------------------
+
+  -aNx ADD_NMAP_XML_RESULT, --add-nmap-xml-result ADD_NMAP_XML_RESULT
+                        Import your nmap-xml-results as your targets.
+
+                        -------------------------------------------------------------
 ```
 
 <a name="live_demo"></a>
