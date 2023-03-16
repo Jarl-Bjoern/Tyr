@@ -16,7 +16,7 @@ def main(args):
     elif (args.target == None and (args.import_list != None or args.add_nmap_xml_result != None)):
         if (args.import_list != None):
             try:
-                Array_Targets = Standard.Read_Targets_v4(args.import_list)
+                Array_Targets = Standard.Read_Targets(args.import_list)
             except FileNotFoundError as e:
                 print(f"Your targetlist can't be found!\n\n{args.import_list}")
 
