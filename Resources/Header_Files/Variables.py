@@ -3,9 +3,9 @@
 # Rainer Christian Bjoern Herold
 
 # Libraries
-from Resources.Standard_Operations.Libraries import *
-from Resources.Standard_Operations.Colors import Colors
-from Resources.Standard_Operations.Standard import Standard
+from .Libraries import *
+from ..Standard_Operations.Colors import Colors
+from ..Standard_Operations.Standard import Standard
 
 # Functions
 def Process_ID(Process_Name):
