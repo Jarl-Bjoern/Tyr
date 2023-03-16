@@ -59,7 +59,7 @@ def main(args):
         kill(PID, SIGKILL), sleep(1.25)
 
     # Main_Process
-    Open_URL(Array_Targets, args.max_tabs, args.time)
+    Open_URL(Array_Targets, args.max_tabs, args.sleep)
 
 # Main
 if __name__ == '__main__':    
