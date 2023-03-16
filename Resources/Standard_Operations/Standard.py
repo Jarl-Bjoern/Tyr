@@ -3,8 +3,8 @@
 # Rainer Christian Bjoern Herold
 
 # Libraries
-from Resources.Standard_Operations.Colors import Colors
-from Resources.Standard_Operations.Libraries import ET, osname, sleep, stdout, system
+from .Colors import Colors
+from ..Header_Files.Libraries import ET, osname, sleep, stdout, system
 
 class Standard:
     def Stdout_Output(Text_Array):
