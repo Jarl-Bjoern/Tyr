@@ -24,7 +24,7 @@ try:
 except ModuleNotFoundError as e: input(f"The module was not found\n\n{e}\n\nPlease confirm with the button 'Return'"), exit()
 
 # Argument_Parser
-from Resources.Standard_Operations.ArgParser import Argument_Parser
+from .ArgParser import Argument_Parser
 args = Argument_Parser()
 
 # Delete_Unused_Functions
