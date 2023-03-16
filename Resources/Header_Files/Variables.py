@@ -13,7 +13,7 @@ def Process_ID(Process_Name):
         if (Process_Name in P.name()):
             return P.pid
 
-def Open_URL(Input_File, args, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
+def Open_URL(Input_File, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
     for URL in Read_File(Input_File):
         browser_open(URL, new=0)
         Counter += 1
