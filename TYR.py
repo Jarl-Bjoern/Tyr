@@ -18,7 +18,7 @@ def main(args):
             try:
                 Array_Targets = Standard.Read_Targets(args.import_list)
             except FileNotFoundError as e:
-                print(f"Your targetlist can't be found!\n\n{args.import_list}")
+                print(f"Your targetlist can't be found!\n\n{args.import_list}"), exit()
 
         if (args.add_nmap_xml_result != None):
             try:
@@ -31,7 +31,7 @@ def main(args):
                     Array_Targets = Array_Temp_Zero
 
             except FileNotFoundError as e:
-                Logs.Error_Message(f"Your targetlist can't be found!\n\n{args.add_nmap_xml_result}")
+                print(f"Your targetlist can't be found!\n\n{args.add_nmap_xml_result}"), exit()
     else:
         if (len(args.target) > 1):
             Array_Targets = []
@@ -59,10 +59,7 @@ def main(args):
         kill(PID, SIGKILL), sleep(1.25)
 
     # Main_Process
-    if (len(Array_Targets) > 0):
-        Open_URL(Array_Targets, args.max_tabs, args.sleep)
-    else:
-        print(f"Your targetlist was empty!\n\n{Array_Targets}")
+    Open_URL(Array_Targets, args.max_tabs, args.sleep)
 
 # Main
 if __name__ == '__main__':    
