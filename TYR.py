@@ -18,7 +18,7 @@ def main(args):
             try:
                 Array_Targets = Standard.Read_Targets(args.import_list)
             except FileNotFoundError as e:
-                print(f"Your targetlist can't be found!\n\n{args.import_list}"), exit()
+                print(Colors.RED+f"Your targetlist can't be found!\n\n{args.import_list}"+Colors.RESET), exit()
 
         if (args.add_nmap_xml_result != None):
             try:
@@ -31,7 +31,7 @@ def main(args):
                     Array_Targets = Array_Temp_Zero
 
             except FileNotFoundError as e:
-                print(f"Your targetlist can't be found!\n\n{args.add_nmap_xml_result}"), exit()
+                print(Colors.RED+f"Your targetlist can't be found!\n\n{args.add_nmap_xml_result}"+Colors.RESET), exit()
     else:
         if (len(args.target) > 1):
             Array_Targets = []
