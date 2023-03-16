@@ -21,15 +21,7 @@ def Argument_Parser(Error_Text, Template_Location = dirname(realpath(__file__)).
 """
 
     parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter, description=Colors.ORANGE+Program_Description+Colors.RESET, usage=SUPPRESS)
-    optional              = parser.add_argument_group(Colors.ORANGE+'optional arguments'+Colors.RESET)
-    performance_arguments = parser.add_argument_group(Colors.ORANGE+'performance arguments'+Colors.RESET)
     target_arguments      = parser.add_argument_group(Colors.ORANGE+'target arguments'+Colors.RESET)
-
-    optional.add_argument('-s','--sleep', type=float, default=0.65, help=Colors.GREEN+'This parameter specify the seconds between the next tab\n\n'+Colors.RESET+'Default: 0.65 Seconds'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)
-    optional.add_argument('-mt','--max-tabs', type=int, default=100, help=Colors.GREEN+'This parameter specify the max open tabs\n\n'+Colors.RESET+'Default: 100'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)
-    optional.add_argument('-h','--help', action='help', default=SUPPRESS, help=Colors.GREEN+'Show this help message and exit.'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)
-
-    performance_arguments.add_argument('-r', '--random-order', type=bool, nargs='?', default=False, help=Colors.GREEN+'This parameter randomize your targets.'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)
 
     target_arguments.add_argument('-iL', '--import-list', type=str, help=Colors.GREEN+'Import your target list in the following example:\n  - http://192.168.2.2\n  - https://192.168.2.3\n  - https://192.168.2.4:8443\n  - ssh://192.168.2.5:22\n  - ssl://192.168.2.5:3389'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)    
     target_arguments.add_argument('-t', '--target', type=str, nargs='*', help=Colors.GREEN+'Specify a single or multiple targets like in the following example:\n   - 127.0.0.1, http://127.0.0.1, https://127.0.0.1'+Colors.BLUE+'\n\n-------------------------------------------------------------------------------------'+Colors.RESET)
