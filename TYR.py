@@ -6,7 +6,7 @@
 from Resources.Header_Files.Variables import *
 
 # Functions
-def main(args):
+def main(args, Array_Targets = []):
     # Target_Options
     if (args.target == None and args.import_list == None and args.add_nmap_xml_result == None):
         from Resources.Header_Files.ArgParser_Intro import Argument_Parser
