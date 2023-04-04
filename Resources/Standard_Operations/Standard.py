@@ -81,7 +81,7 @@ class Standard:
             Array_Template = Standard.Read_Targets(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))
 
         with open(Input_File, 'r') as f:
-            Array_Temp_Targets = f.read().splitlines():
+            Array_Temp_Targets = f.read().splitlines()
 
         for i in Array_Temp_Targets:
             if (i not in Array_Out):
