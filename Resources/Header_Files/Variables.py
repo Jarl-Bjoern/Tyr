@@ -29,4 +29,5 @@ def Open_URL(Array_Targets, MAX_COUNT, SLEEP_SECONDS, Counter = 0):
         if (Counter == MAX_COUNT):
             input(Colors.ORANGE+'\n\tThe maximum number '+Colors.RED+f'{MAX_COUNT}'+Colors.ORANGE+' of open tabs has been reached!\n\n\t   You can continue with the '+Colors.CYAN+'"Return"'+Colors.ORANGE+' key.\n\nWith the key combination '+Colors.CYAN+'"CTRL" + "F4"'+Colors.ORANGE+' you can close open tabs faster'+Colors.RESET)
             Counter = 0
+            Standard.Print_Header()
     print(Colors.ORANGE+"All available URLs were opened! :)"+Colors.RESET)
