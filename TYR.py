@@ -63,6 +63,6 @@ def main(args, Array_Targets = []):
     Open_URL(Array_Targets, args.max_tabs, args.sleep)
 
 # Main
-if __name__ == '__main__':    
+if __name__ == '__main__':
     try: main(args)
     except KeyboardInterrupt: exit()
