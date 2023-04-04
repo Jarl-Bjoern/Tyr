@@ -41,7 +41,8 @@ class Standard:
 
     def Read_Targets_XML(file_path, Array_Out = [], Array_Template = []):
         if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))):
-            Array_Template = Standard.Read_Targets(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))
+            with open(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"), 'r') as f:
+                Array_Template = f.read().splitlines()
 
         Protocol, Address, Port, Skip_Attributes = "","","",False
         for event, elem in ET.iterparse(file_path, events=("end",)):
@@ -76,9 +77,10 @@ class Standard:
 
         return Array_Out
 
-    def Read_Targets(Input_File, Array_Out = [], Array_Temp = []):
-        if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state")):
-            Array_Template = Standard.Read_Targets(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))
+    def Read_Targets(Input_File, Array_Out = [], Array_Template = []):
+        if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))):
+            with open(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"), 'r') as f:
+                Array_Template = f.read().splitlines()
 
         with open(Input_File, 'r') as f:
             Array_Temp_Targets = f.read().splitlines()
