@@ -76,15 +76,17 @@ class Standard:
 
         return Array_Out
 
-    def Read_Targets(Input_File, Array_Out = [], Array_Temp = [], Array_Targets = []):
+    def Read_Targets(Input_File, Array_Out = [], Array_Temp = []):
         if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))):
             Array_Template = Standard.Read_Targets(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))
 
         with open(Input_File, 'r') as f:
-            for i in f.read().splitlines():
-                if (i not in Array_Out):
-                    if (i not in Array_Template):
-                        Array_Out.append(i)
+            Array_Temp_Targets = f.read().splitlines():
+
+        for i in Array_Temp_Targets:
+            if (i not in Array_Out):
+                if (i not in Array_Template):
+                    Array_Out.append(i)
 
             return Array_Out
 
