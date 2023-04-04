@@ -68,5 +68,5 @@ if __name__ == '__main__':
         main(args)
     except KeyboardInterrupt:
         if (len(Dict_State['State']) > 0):
-            Standard.Write_State_File(Dict_State['State'], '.')
+            Standard.Write_State_File(Dict_State['State'], Dict_State['Location'])
         exit()
