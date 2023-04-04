@@ -17,7 +17,7 @@ class Standard:
         Header = """💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 💀\t\t\t\t\t\t\t\t💀
 💀\t\t              """+Colors.UNDERLINE+"TYR"+Colors.RESET+"""\t\t\t\t💀
-💀\t\t\t  """+Colors.ORANGE+"Version "+Colors.CYAN+"0.2"+Colors.RESET+"""\t\t\t\t💀
+💀\t\t\t  """+Colors.ORANGE+"Version "+Colors.BLUE+"0.2"+Colors.RESET+"""\t\t\t\t💀
 💀\t\t"""+Colors.CYAN+"Rainer Christian Bjoern Herold"+Colors.RESET+"""\t\t\t💀
 💀\t\t\t\t\t\t\t\t💀
 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀\n\n
@@ -32,7 +32,7 @@ class Standard:
         Header = """💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 💀\t\t\t\t\t\t\t\t💀
 💀\t\t              """+Colors.UNDERLINE+"TYR"+Colors.RESET+"""\t\t\t\t💀
-💀\t\t\t  """+Colors.ORANGE+"Version "+Colors.CYAN+"0.2"+Colors.RESET+"""\t\t\t\t💀
+💀\t\t\t  """+Colors.ORANGE+"Version "+Colors.BLUE+"0.2"+Colors.RESET+"""\t\t\t\t💀
 💀\t\t"""+Colors.CYAN+"Rainer Christian Bjoern Herold"+Colors.RESET+"""\t\t\t💀
 💀\t\t\t\t\t\t\t\t💀
 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀\n\n
