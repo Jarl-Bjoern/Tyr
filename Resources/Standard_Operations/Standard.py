@@ -77,7 +77,7 @@ class Standard:
         return Array_Out
 
     def Read_Targets(Input_File, Array_Out = [], Array_Temp = []):
-        if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))):
+        if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state")):
             Array_Template = Standard.Read_Targets(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))
 
         with open(Input_File, 'r') as f:
