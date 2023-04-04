@@ -39,7 +39,10 @@ class Standard:
 """
         Standard.Stdout_Output(Header)
 
-    def Read_Targets_XML(file_path, Array_Out = []):
+    def Read_Targets_XML(file_path, Array_Out = [], Array_Template = []):
+        if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state")))):
+            Array_Template = Standard.Read_File(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state")))
+
         Protocol, Address, Port, Skip_Attributes = "","","",False
         for event, elem in ET.iterparse(file_path, events=("end",)):
             if (event == "end"):
@@ -64,7 +67,8 @@ class Standard:
 
                         if ('https://' in Full_Target or 'http://' in Full_Target):
                             if (Full_Target not in Array_Out):
-                                Array_Out.append(Full_Target)
+                                if (Full_Target not in Array_Template):
+                                    Array_Out.append(Full_Target)
 
                         Full_Target = ""
 
