@@ -13,6 +13,19 @@ class Standard:
             stdout.flush()
             sleep(0.01)
 
+    def Print_Header():
+        Header = """💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+💀\t\t\t\t\t\t\t\t💀
+💀\t\t              """+Colors.UNDERLINE+"TYR"+Colors.RESET+"""\t\t\t\t💀
+💀\t\t\t  """+Colors.ORANGE+"Version "+Colors.CYAN+"0.2"+Colors.RESET+"""\t\t\t\t💀
+💀\t\t"""+Colors.CYAN+"Rainer Christian Bjoern Herold"+Colors.RESET+"""\t\t\t💀
+💀\t\t\t\t\t\t\t\t💀
+💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀\n\n
+"""
+        if (osname == "nt"): system('cls')
+        else:                system('clear')
+        print(Header)
+
     def Initialien():
         if (osname == 'nt'): system('cls')
         else: system('clear')
