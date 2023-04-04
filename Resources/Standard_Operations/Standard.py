@@ -40,7 +40,7 @@ class Standard:
         Standard.Stdout_Output(Header)
 
     def Read_Targets_XML(file_path, Array_Out = [], Array_Template = []):
-        if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state")))):
+        if (exists(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state"))):
             Array_Template = Standard.Read_File(join(dirname(realpath(__file__)).split("Resources/Standard_Operations")[0], "scan.state")))
 
         Protocol, Address, Port, Skip_Attributes = "","","",False
