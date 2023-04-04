@@ -13,7 +13,7 @@ __status__ = "Production"
 
 # Libraries
 try:
-    from os import kill, name as osname, system
+    from os import kill, name as osname, remove, system
     from os.path import dirname, exists, join, realpath
     from psutil import process_iter
     from signal import SIGKILL
