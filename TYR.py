@@ -59,6 +59,10 @@ def main(args, Array_Targets = []):
         input(Colors.ORANGE+"An already open Firefox instance has been located, it is advised\n\t\tto close it to avoid errors.\n\n      The instance will be closed with the "+Colors.CYAN+"'Return'"+Colors.ORANGE+" button.\n\n"+Colors.RESET)
         kill(PID, SIGKILL), sleep(1.25)
 
+    # Remove_Old_State_File
+    if (exists(join(dirname(realpath(__file__)), "scan.state"))):
+        remove(join(dirname(realpath(__file__)), "scan.state"))
+
     # Main_Process
     Open_URL(Array_Targets, args.max_tabs, args.sleep)
 
