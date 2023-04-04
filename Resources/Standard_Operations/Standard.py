@@ -62,3 +62,8 @@ class Standard:
     def Read_Targets(Input_File):
         with open(Input_File, 'r') as f:
             return f.read().splitlines()
+
+    def Write_State_File(Array_State, Location):
+        with open(join(Location, 'scan.state'), 'w') as f:
+            for _ in Array_State:
+                f.write(f'{_}\n')
