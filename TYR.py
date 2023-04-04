@@ -64,5 +64,9 @@ def main(args, Array_Targets = []):
 
 # Main
 if __name__ == '__main__':
-    try: main(args)
-    except KeyboardInterrupt: exit()
+    try:
+        main(args)
+    except KeyboardInterrupt:
+        if (len(Dict_State['State']) > 0):
+            Standard.Write_State_File(Dict_State['State'], '.')
+        exit()
