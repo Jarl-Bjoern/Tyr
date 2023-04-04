@@ -4,7 +4,7 @@
 
 # Libraries
 from .Colors import Colors
-from ..Header_Files.Libraries import ET, osname, sleep, stdout, system
+from ..Header_Files.Libraries import exists, ET, osname, sleep, stdout, system
 
 class Standard:
     def Stdout_Output(Text_Array):
