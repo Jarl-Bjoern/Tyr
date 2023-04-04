@@ -8,7 +8,10 @@ from ..Standard_Operations.Colors import Colors
 from ..Standard_Operations.Standard import Standard
 
 # Dictionaries
-Dict_State = {'State': []}
+Dict_State = {
+    "State": [],
+    "Location": dirname(realpath(__file__)).split('Resources/Header_Files')[0]
+}
 
 # Functions
 def Process_ID(Process_Name):
