@@ -90,7 +90,7 @@ class Standard:
                 if (i not in Array_Template):
                     Array_Out.append(i)
 
-            return Array_Out
+        return Array_Out
 
     def Write_State_File(Array_State, Location):
         with open(join(Location, 'scan.state'), 'w') as f:
