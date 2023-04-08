@@ -19,7 +19,7 @@ def Process_ID(Process_Name):
         if (Process_Name in P.name()):
             return P.pid
 
-def Open_URL(Array_Targets, MAX_COUNT, SLEEP_SECONDS, Counter = 0, Current_Step = 0):
+def Open_URL(Array_Targets, MAX_COUNT, SLEEP_SECONDS, Counter = 0, Current_Step = 0, Current_State = 0):
     Max_Length = len(Array_Targets)
     for URL in Array_Targets:
         browser_open(URL, new=0)
