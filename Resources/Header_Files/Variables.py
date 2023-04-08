@@ -29,7 +29,7 @@ def Open_URL(Array_Targets, MAX_COUNT, SLEEP_SECONDS, Counter = 0, Current_Step 
         Current_Step += 1
         sleep(SLEEP_SECONDS)
         if (Counter == MAX_COUNT):
-            try:    Current_State = Current_Step/Max_Length)*100
+            try:    Current_State = (Current_Step/Max_Length)*100
             except: Current_State = Max_Length
             input(
                 Colors.ORANGE+'\n\tThe maximum number '+Colors.RED+f'{MAX_COUNT}'+Colors.ORANGE+' of open tabs has been reached!\n\n\t   You can continue with the '
