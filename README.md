@@ -108,7 +108,7 @@ target arguments:
 ```
 
 <a name="live_demo"></a>
-## ⚔ TYR
+## ⚔ Live Example
 
 <p align=center>
     <img src="https://github.com/Jarl-Bjoern/Jarl-Bjoern/blob/main/Screencasts/tyr_start.gif" width=700 height=500>
