@@ -10,8 +10,8 @@
   <a href="https://www.python.org/downloads/release/python-3100/">
     <img alt="python" src="https://img.shields.io/badge/python-3.10-blue.svg?logo=python&logoColor=cyan" />
   </a>
-  <a href="https://visitor-badge.glitch.me/badge?page_id=jarl-bjoern/tyr&left_color=grey&right_color=blue">
-    <img alt="visitors" src="https://visitor-badge.glitch.me/badge?page_id=jarl-bjoern/tyr&left_color=grey&right_color=blue" />
+  <a href="https://visitor-badge.lithub.cc/badge?page_id=jarl-bjoern/tyr.visitor-badge&left_text=Visitors">
+    <img alt="visitors" src="https://visitor-badge.lithub.cc/badge?page_id=jarl-bjoern/tyr.visitor-badge&left_text=Visitors" />
   </a>
 </div>
 <div align="center">
