@@ -45,35 +45,38 @@ class Standard:
                 Array_Template = f.read().splitlines()
 
         Protocol, Address, Port, Skip_Attributes = "","","",False
-        for event, elem in ET.iterparse(file_path, events=("end",)):
-            if (event == "end"):
-                if (elem.tag == 'address'):
-                    if (Skip_Attributes != True):
-                        Address = elem.attrib['addr']
-                elif (elem.tag == 'state'):
-                    if (elem.attrib['state'] != "open"):
-                        Skip_Attributes = True
-                elif (elem.tag == 'service'):
-                    if (Skip_Attributes != True):
-                        if ('http' in elem.attrib['name'] and not 'ssl' in elem.attrib['name'] and not 'https' in elem.attrib['name']):
-                            Protocol = "http"
-                        elif ('https' in elem.attrib['name'] or ('http' in elem.attrib['name'] and 'ssl' in elem.attrib['name'])):
-                            Protocol = "https"
-                elif (elem.tag == 'port'):
-                    if (Skip_Attributes != True):
-                        Port = elem.attrib['portid']
-                    if (Protocol != "" and Address != "" and Port != ""):
-                        Full_Target = f'{Protocol}://{Address}:{Port}'
-                        Protocol, Address, Port = "","",""
-
-                        if ('https://' in Full_Target or 'http://' in Full_Target):
-                            if (Full_Target not in Array_Out):
-                                if (Full_Target not in Array_Template):
-                                    Array_Out.append(Full_Target)
-
-                        Full_Target = ""
-
-                    Skip_Attributes = False
+        try:
+            for event, elem in ET.iterparse(file_path, events=("end",)):
+                if (event == "end"):
+                    if (elem.tag == 'address'):
+                        if (Skip_Attributes != True):
+                            Address = elem.attrib['addr']
+                    elif (elem.tag == 'state'):
+                        if (elem.attrib['state'] != "open"):
+                            Skip_Attributes = True
+                    elif (elem.tag == 'service'):
+                        if (Skip_Attributes != True):
+                            if ('http' in elem.attrib['name'] and not 'ssl' in elem.attrib['name'] and not 'https' in elem.attrib['name']):
+                                Protocol = "http"
+                            elif ('https' in elem.attrib['name'] or ('http' in elem.attrib['name'] and 'ssl' in elem.attrib['name'])):
+                                Protocol = "https"
+                    elif (elem.tag == 'port'):
+                        if (Skip_Attributes != True):
+                            Port = elem.attrib['portid']
+                        if (Protocol != "" and Address != "" and Port != ""):
+                            Full_Target = f'{Protocol}://{Address}:{Port}'
+                            Protocol, Address, Port = "","",""
+    
+                            if ('https://' in Full_Target or 'http://' in Full_Target):
+                                if (Full_Target not in Array_Out):
+                                    if (Full_Target not in Array_Template):
+                                        Array_Out.append(Full_Target)
+    
+                            Full_Target = ""
+    
+                        Skip_Attributes = False
+        except ParseError:
+            print ("It's seems that the xml file"+Colors.RED+f" {file_path} "+Colors.RESET+"is empty."), exit()
 
         return Array_Out
 
