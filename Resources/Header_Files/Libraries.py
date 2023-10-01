@@ -20,6 +20,7 @@ try:
     from sys import stdout
     from time import sleep
     from webbrowser import open as browser_open
+    from xml.etree.ElementTree import ParseError
     import xml.etree.ElementTree as ET
 except ModuleNotFoundError as e: input(f"The module was not found\n\n{e}\n\nPlease confirm with the button 'Return'"), exit()
 
