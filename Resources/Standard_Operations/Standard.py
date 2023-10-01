@@ -50,7 +50,8 @@ class Standard:
                 if (event == "end"):
                     if (elem.tag == 'address'):
                         if (Skip_Attributes != True):
-                            Address = elem.attrib['addr']
+                            if (elem.attrib['addrtype'] == 'ipv4'):
+                                Address = elem.attrib['addr']
                     elif (elem.tag == 'state'):
                         if (elem.attrib['state'] != "open"):
                             Skip_Attributes = True
